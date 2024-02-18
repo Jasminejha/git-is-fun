@@ -1,0 +1,22 @@
+---
+title: "Data Science for Public Policy"
+subtitle: "Assignment XX"
+author: "Name - jj1073"
+execute:
+  warning: false
+format:
+  html:
+    embed-resources: true
+---
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+storms %>%
+  ggplot(mapping = aes(x = pressure, y = wind)) +
+  geom_point()
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
